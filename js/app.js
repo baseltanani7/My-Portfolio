@@ -121,6 +121,7 @@ let currentIndex = 0;
 
 zoom_icons.forEach((icn, i) =>
   icn.addEventListener("click", () => {
+    console.log('click');
     prt_section.classList.add("open");
     document.body.classList.add("stopScrolling");
     currentIndex = i;
